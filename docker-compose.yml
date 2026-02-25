@@ -31,9 +31,6 @@ services:
       - DEFAULT_MODEL=gpt-oss
       - ENABLE_RAG_WEB_SEARCH=true
       - RAG_WEB_SEARCH_ENGINE=duckduckgo
-    depends_on:
-      ollama:
-        condition: service_healthy
     networks:
       - chatbot_network
 
@@ -54,9 +51,6 @@ services:
       - GENERIC_TIMEZONE=Europe/Paris
       - TZ=Europe/Paris
       - N8N_DEFAULT_LOCALE=fr
-    depends_on:
-      ollama:
-        condition: service_healthy
     networks:
       - chatbot_network
 
