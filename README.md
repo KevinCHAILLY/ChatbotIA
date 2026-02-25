@@ -42,13 +42,13 @@ Ce projet permet de déployer une stack pédagogique complète pour l'étude des
 ### Ollama
 - **Modèles disponibles** : Téléchargez des modèles avec la commande :
   ```bash
-  docker exec -it ollama ollama pull llama3.2
+  docker exec -it ollama ollama pull gpt-oss
   ```
 - **Port** : 11434 (API accessible pour les exercices)
 
 ### OpenWebUI
 - **Configuration** : Les paramètres sont définis dans le `docker-compose.yml`
-  - `DEFAULT_MODEL=llama3.2` : Modèle par défaut
+  - `DEFAULT_MODEL=gpt-oss` : Modèle par défaut
   - `ENABLE_RAG_WEB_SEARCH=true` : Active la recherche web intégrée
   - `RAG_WEB_SEARCH_ENGINE=duckduckgo` : Moteur de recherche utilisé
 
